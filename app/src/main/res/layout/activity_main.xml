@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/default_wallpaper"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/signinemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="email"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="#fff"
+        />
+    <EditText
+        android:id="@+id/signinpass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="password"
+        android:layout_marginBottom="18dp"
+        android:paddingLeft="10dp"
+        android:background="#fff"/>
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log IN"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#EEA9A9"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Registered "
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
